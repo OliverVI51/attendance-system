@@ -1,0 +1,63 @@
+attendance-system/
+├── CMakeLists.txt
+├── sdkconfig.defaults
+├── main/
+│   ├── CMakeLists.txt
+│   ├── idf_component.yml
+│   ├── main.c
+│   ├── app_config.h
+│   └── system_state.h
+├── components/
+│   ├── fingerprint_driver/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── fingerprint_driver.h
+│   │   └── fingerprint_driver.c
+│   ├── mp3_driver/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── mp3_driver.h
+│   │   └── mp3_driver.c
+│   ├── display_driver/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── display_driver.h
+│   │   └── display_driver.c
+│   ├── keypad_driver/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── keypad_driver.h
+│   │   └── keypad_driver.c
+│   ├── network_manager/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── network_manager.h
+│   │   └── network_manager.c
+│   ├── time_manager/
+│   │   ├── CMakeLists.txt
+│   │   ├── idf_component.yml
+│   │   ├── include/
+│   │   │   └── time_manager.h
+│   │   └── time_manager.c
+│   └── system_tasks/
+│       ├── CMakeLists.txt
+│       ├── idf_component.yml
+│       ├── include/
+│       │   ├── ui_task.h
+│       │   ├── fingerprint_task.h
+│       │   ├── keypad_task.h
+│       │   ├── audio_task.h
+│       │   ├── network_task.h
+│       │   └── time_sync_task.h
+│       ├── ui_task.c
+│       ├── fingerprint_task.c
+│       ├── keypad_task.c
+│       ├── audio_task.c
+│       ├── network_task.c
+│       └── time_sync_task.c
+└── partitions.csv

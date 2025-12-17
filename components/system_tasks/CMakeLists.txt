@@ -1,0 +1,18 @@
+idf_component_register(
+    SRCS 
+        "ui_task.c"
+        "fingerprint_task.c"
+        "keypad_task.c"
+        "audio_task.c"
+        "network_task.c"
+        "time_sync_task.c"
+    INCLUDE_DIRS "include"
+    REQUIRES 
+        fingerprint_driver
+        mp3_driver
+        display_driver
+        keypad_driver
+        network_manager
+        time_manager
+        freertos
+)
