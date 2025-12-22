@@ -68,7 +68,11 @@
 #define AUDIO_OUT_OF_SERVICE 4
 #define BOOT_CHECK_REQUIRED_MP3_COUNT   4
 
-#define BOOT_CHECK_TIMEOUT_MS           20000   // Timeout for hardware responses
+#define BOOT_CHECK_MP3_COUNT    4
+#define UI_LINE_HEIGHT          20
+#define UI_START_Y              40
+#define MP3_DEBUG_RETRY_COUNT   3
+#define BOOT_CHECK_TIMEOUT_MS   20000   // Timeout for hardware responses
 
 // FreeRTOS Task Priorities
 #define PRIORITY_UI_TASK 5

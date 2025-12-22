@@ -27,12 +27,6 @@
 
 static const char *TAG = "MAIN";
 
-// --- Configuration Constants ---
-#define BOOT_CHECK_MP3_COUNT    4
-#define UI_LINE_HEIGHT          20
-#define UI_START_Y              40
-#define MP3_DEBUG_RETRY_COUNT   3
-
 // --- Global Queue Handles ---
 QueueHandle_t g_ui_queue;
 QueueHandle_t g_fingerprint_queue;
