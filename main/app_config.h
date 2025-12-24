@@ -2,19 +2,19 @@
 #define APP_CONFIG_H
 
 // Wi-Fi Configuration
-#define WIFI_SSID "Debian-phy_AP"
-#define WIFI_PASSWORD "00000000"
+#define WIFI_SSID "Your_WiFi_SSID"
+#define WIFI_PASSWORD "Your_WiFi_Password"
 #define WIFI_MAXIMUM_RETRY 10
 
 // HTTP Configuration
-#define HTTP_SERVER_URL "http://debian-phy.lan:8063/attendance"
+#define HTTP_SERVER_URL "http://Your_PCs_IP:8063/attendance"
 #define HTTP_TIMEOUT_MS 5000
 #define HTTP_RETRY_COUNT 3
 
 // NTP Configuration
-#define NTP_SERVER "debian-phy.lan"
+#define NTP_SERVER "Your_NTP_Server"
 #define NTP_SYNC_INTERVAL_SEC 3600
-#define TIMEZONE "EET-2"  // Africa/Cairo (UTC+2)
+#define TIMEZONE "Your_Timezone"
 
 // System Timing
 #define OUT_OF_SERVICE_TIMEOUT_SEC 120
@@ -28,12 +28,12 @@
 #define UART0_TX_PIN 43
 #define UART0_RX_PIN 44
 
-#define UART1_TX_PIN 17  // Fingerprint
+#define UART1_TX_PIN 17 // Fingerprint
 #define UART1_RX_PIN 18
 #define FINGERPRINT_UART UART_NUM_1
 #define FINGERPRINT_BAUD 57600
 
-#define UART2_TX_PIN 41  // MP3
+#define UART2_TX_PIN 41 // MP3
 #define UART2_RX_PIN 42
 #define MP3_UART UART_NUM_2
 #define MP3_BAUD 9600
@@ -66,13 +66,13 @@
 #define AUDIO_FAILURE 2
 #define AUDIO_BEEP 3
 #define AUDIO_OUT_OF_SERVICE 4
-#define BOOT_CHECK_REQUIRED_MP3_COUNT   4
+#define BOOT_CHECK_REQUIRED_MP3_COUNT 4
 
-#define BOOT_CHECK_MP3_COUNT    4
-#define UI_LINE_HEIGHT          20
-#define UI_START_Y              40
-#define MP3_DEBUG_RETRY_COUNT   3
-#define BOOT_CHECK_TIMEOUT_MS   20000   // Timeout for hardware responses
+#define BOOT_CHECK_MP3_COUNT 4
+#define UI_LINE_HEIGHT 20
+#define UI_START_Y 40
+#define MP3_DEBUG_RETRY_COUNT 3
+#define BOOT_CHECK_TIMEOUT_MS 20000 // Timeout for hardware responses
 
 // FreeRTOS Task Priorities
 #define PRIORITY_UI_TASK 5

@@ -8,7 +8,7 @@ import requests
 import sys
 
 # Server configuration
-SERVER_URL = "http://192.168.50.1:8063"
+SERVER_URL = "http://127.0.0.1:8063"
 
 # Sample users (fingerprint IDs 1-20)
 SAMPLE_USERS = [

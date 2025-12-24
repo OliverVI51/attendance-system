@@ -7,6 +7,7 @@ sdkconfig.old
 *.elf
 *.map
 *.hex
+*.uf2
 
 # --- Python ---
 __pycache__/
@@ -15,16 +16,23 @@ __pycache__/
 venv/
 env/
 .venv/
+.pytest_cache/
+
+# --- Database & Logs ---
+*.db
+*.log
+*.sqlite3
 
 # --- IDEs and OS ---
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+.cache/
 
 # --- Managed Components ---
-# We usually ignore the downloaded component code, 
-# but KEEP idf_component.yml and dependencies.lock
+# We generally ignore the downloaded component code (managed_components dir)
+# but KEEP idf_component.yml and dependencies.lock for reproducibility.
 **/managed_components/
 
 # --- Specific Project Files to Ignore ---
@@ -35,6 +43,4 @@ temp_*.mp3
 # --- Exceptions (Things we DO want to keep) ---
 !**/sdkconfig.defaults
 !partitions.csv
-!**/data/**/*.bin
-!S3_Main_Controller/sd_card_assets/
 !**/requirements.txt

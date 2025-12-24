@@ -1,4 +1,4 @@
-    #!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 ESP32-S3 Attendance System Server
 Receives attendance records from ESP32 and stores them in SQLite database
